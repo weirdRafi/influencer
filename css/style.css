@@ -1,0 +1,194 @@
+/* Common css */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container{
+    width: 1040px;
+    margin: 0 auto;
+}
+
+
+/* Nav styles */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex ;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/* Banner */
+
+.banner{
+    display: flex ;
+    margin-top: 100px;
+}
+.article{
+    margin-top: 100px;
+}
+            
+.circle{
+    position: relative;
+}
+.camera{
+    position: absolute;
+    top: 200px;
+}
+.btn{
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 20px;
+    border: 0;
+    border-radius: 50px;
+}
+
+/* Images */
+.images{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+
+}
+
+/* card-section */
+
+.card-section{
+    margin-top: 100px;
+}
+.card-title{
+    text-align: center;
+}
+.stars i{
+    color: #FB8200;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    box-shadow: 10px 10px 5px  #787885;
+    margin: 20px;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card-inside{
+    padding: 20px;
+}
+.card-sub{
+    color: #787885;
+}
+.btn-2{
+    color: #E02C6D;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    border: 0;
+    text-align: right;
+    margin-left: 900px;
+}
+
+/* Feature styles */
+
+.feature-main{
+    display: flex;
+    margin-top: 100px;
+}
+.feature-article{
+    margin-left: 40px;
+}
+
+.btn-3{
+    background-color: #E02C6D;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+}
+ /* Footer  */
+
+.footer{
+    margin-top: 200px;
+    height: 200px;
+    background-color: #0A0826;
+    padding-top: 20px;
+}
+
+.fot{
+    text-align: center;
+    color: #fff;
+}
+.footer-title{
+    font-size: 24px;
+}
+.footer-para{
+    font-size: 14px;
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        width: 300px;
+    }
+    .menu{
+        display: none;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav h3{
+        font-size: 18px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .camera{
+        position: absolute;
+        left: 0;
+        top: 80px;
+    }
+    .circle{
+        display: none;
+    }
+    .title{
+        font-weight: 600;
+    }
+    .article{
+        text-align: center;
+        margin-top: 300px;
+        margin-left: 60px;
+    }
+    .images{
+        margin-left: 150px;
+        flex-direction: column;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-main{
+        flex-direction: column;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .feature-article{
+        text-align: center;
+    }
+    .btn-2{
+        margin-left: 0;
+    }
+    .footer{
+        font-size: 18px;
+    }
+}
